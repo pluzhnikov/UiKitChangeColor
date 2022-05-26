@@ -133,7 +133,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-b8-6FM">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-b8-6FM">
                                         <rect key="frame" x="294" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="switchDarkTheme:" destination="BYZ-38-t0r" eventType="valueChanged" id="ncc-LC-ygj"/>
@@ -164,6 +164,11 @@
                         <outlet property="labelAlpha" destination="E3C-tw-dUW" id="S8s-wZ-Icc"/>
                         <outlet property="labelBlue" destination="Ecx-mg-49x" id="ObF-mv-ThJ"/>
                         <outlet property="labelGreen" destination="hZQ-9Q-rzp" id="ds4-kX-WWj"/>
+                        <outlet property="labelNameAlpha" destination="2wC-8T-PbR" id="h3X-Jo-BBE"/>
+                        <outlet property="labelNameBlue" destination="xgb-Hu-Wha" id="GJP-vZ-UrA"/>
+                        <outlet property="labelNameGreen" destination="6UV-9p-3am" id="U5s-46-lGk"/>
+                        <outlet property="labelNameRed" destination="nEE-zH-ctp" id="z41-Al-ZVw"/>
+                        <outlet property="labelNameTheme" destination="h0T-bl-Qko" id="8rn-Gl-3eO"/>
                         <outlet property="labelRed" destination="Dbe-Dp-mX0" id="m1v-Qz-BcX"/>
                         <outlet property="redSlider" destination="T9m-up-C2X" id="Cx8-AT-4ae"/>
                         <outlet property="viewColor" destination="WVN-GX-QxU" id="gQW-Oe-wL4"/>

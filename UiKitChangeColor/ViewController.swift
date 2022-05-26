@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelBlue: UILabel!
     @IBOutlet weak var labelAlpha: UILabel!
     
+    @IBOutlet weak var labelNameRed: UILabel!
+    @IBOutlet weak var labelNameGreen: UILabel!
+    @IBOutlet weak var labelNameAlpha: UILabel!
+    @IBOutlet weak var labelNameBlue: UILabel!
+    @IBOutlet weak var labelNameTheme: UILabel!
     
     
     @IBOutlet weak var redSlider: UISlider!
@@ -22,6 +27,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueSlider: UISlider!
     @IBOutlet weak var alphaSlider: UISlider!
     
+    lazy var listLabel = [labelRed, labelBlue, labelGreen,labelAlpha,
+                     labelNameRed,labelNameBlue,labelNameBlue,
+                     labelNameAlpha,labelNameGreen,labelNameTheme]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +58,7 @@ class ViewController: UIViewController {
         alphaSlider.maximumValue = 100
         alphaSlider.value = 100
         
-                
+        
         setViewColor()
 
         
@@ -78,7 +86,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchDarkTheme(_ sender: UISwitch) {
-    
+
+        self.view.backgroundColor = (sender.isOn ? UIColor.black : UIColor.white)
+        let colorTeheme = (sender.isOn ?  UIColor.white : UIColor.black)
+        
+        for item in listLabel {
+            item?.textColor = colorTeheme
+        }
+        
     }
     private func getValueSlider(from slider: UISlider) -> String {
         return String(Int(slider.value))
